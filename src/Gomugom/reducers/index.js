@@ -1,0 +1,1 @@
+export gomugom from './GomugomReducer';
