@@ -2,9 +2,14 @@ import React from 'react';
 import Gnb from './Gnb';
 
 const App = ({ children }) => (
-    <div>
+    <div
+      className="allWrap"
+      style={{
+        height: window.innerHeight
+      }}
+    >
         <Gnb />
-        <div>{children}</div>
+        <div className="contentWrap">{children}</div>
     </div>
 );
 

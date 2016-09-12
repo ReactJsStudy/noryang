@@ -32,16 +32,22 @@ module.exports = {
         }, {
             test: /\.scss$/,
             loader: ExtractSASS.extract(['css?sourceMap!postcss!resolve-url!sass?sourceMap'])
-        }]
+        }, {
+            test: /\.(png|jpg)$/,
+            loader: 'file-loader?name=Images/[name].[ext]',
+        },]
     },
     postcss: function () {
         return [precss, autoprefixer];
     },
     resolve: {
 		root: [ DEV_PATH ],
-        extensions: [ '', '.js' ]
+        extensions: [ '', '.js', '.jsx', '.ts', '.tsx' ]
     },
     node: { fs: "empty" },
+    alias: {
+      Images: path.join(DEV_PATH, 'Images'),
+    },
     plugins: [
         new CleanWebpackPlugin([ BUILD_PATH ], { root: ROOT_PATH }),
         new webpack.EnvironmentPlugin([ "NODE_ENV" ]),
