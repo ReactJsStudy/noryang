@@ -4,9 +4,9 @@ import { Link } from 'react-router';
 const Gnb = () => {
     return (
         <header>
-            Links:{' '}
-            <Link to="/">Home</Link>{' '}
+            <Link className="home" to="/">Home</Link>{' '}
             <Link to="/gomugom">gomugom</Link>
+            <Link to="/arusantiomo">Arusantimo</Link>
         </header>
     )
 };

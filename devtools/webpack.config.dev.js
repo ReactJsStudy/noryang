@@ -37,7 +37,10 @@ module.exports = {
             }, {
                 test: /\.scss$/,
                 loader: ExtractSASS.extract(['css?sourceMap!postcss!resolve-url!sass?sourceMap'])
-            }
+            }, {
+                test: /\.(png|jpg)$/,
+                loader: 'file-loader?name=Images/[name].[ext]',
+            },
         ]
     },
     postcss: function () {
@@ -45,9 +48,12 @@ module.exports = {
     },
     resolve: {
         root: [ DEV_PATH ],
-        extensions: [ '', '.js' ]
+        extensions: [ '', '.js', '.jsx', '.ts', '.tsx' ]
     },
     node: { fs: "empty" },
+    alias: {
+      Images: path.join(DEV_PATH, 'Images'),
+    },
     plugins: [
         // 기동시의 환경변수를 js 에서도 사용할 수 있게 한다.
         new webpack.EnvironmentPlugin([

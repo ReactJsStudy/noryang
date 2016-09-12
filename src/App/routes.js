@@ -1,6 +1,7 @@
 import App from './App';
 import Home from '../Home/components/Home';
 import Gomugom from '../Gomugom/components/Gomugom';
+import ArusantimoMain from '../Arusantimo/components/ArusantimoMain';
 
 const routes = getState => ({
     path: '/',
@@ -12,6 +13,10 @@ const routes = getState => ({
             path: '/gomugom',
             component: Gomugom,
             onEnter: ()=>{ console.log('gomugom page rendered'); }
+        }, {
+            path: '/arusantimo',
+            component: ArusantimoMain,
+            onEnter: ()=>{ console.log('welcome Arunsantimo page!!!\n\n\n\n\n\n enjoy~~'); }
         }
     ]
 });

@@ -1,8 +1,57 @@
 html {
-    height: 100%;
+  height: 100%;
 }
-
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+header {
+  position: relative;
+  top: 30px;
+  left: 3%;
+  overflow: hidden;
+  a {
+    float: left;
+    display: block;
+    position: relative;
+    margin-right: 15px;
+    padding: 10px 50px 10px 15px;
+    font-size: 20px;
+    background-color: #666;
+    color: #fff;
+    &:after {
+      content: "↕";
+      position: absolute;
+      right: 10px;
+    }
+  }
+  .home {
+    background-color: #f3f3f3;
+    color: #999;
+    padding-right: 15px;
+    &:after {
+      display: none;
+    }
+  }
+}
+.allWrap {
+  background-image: url('../../Images/bg.jpg');
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+.contentWrap {
+  min-height: 600px;
+  position: relative;
+  left: 3%;
+  top: 80px;
+  width: 88%;
+  padding: 3%;
+  background-color: rgba(255,255,255,0.8);
 }
