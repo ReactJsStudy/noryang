@@ -3,6 +3,11 @@
 [노량진 프로젝트]  
 실전 연습을 위한 ReactJS 스터디 프로젝트입니다.
 
+## git flow 관리 규칙
+1. commit description은 "[닉네임] 멘트" 식으로 한다.
+2. 자신의 브랜치에서 작업하고, squash 머지를 한 다음, develop 브랜치로 merge request를 한다.
+3. 스터디 시간에 함께 리뷰를 마친 다음 병합한다.
+
 ## Commands
 ```cmd
 > npm i          // 설치
