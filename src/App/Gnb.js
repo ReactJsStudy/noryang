@@ -6,7 +6,7 @@ const Gnb = () => {
         <header>
             <Link className="home" to="/">Home</Link>{' '}
             <Link to="/gomugom">gomugom</Link>
-            <Link to="/arusantiomo">Arusantimo</Link>
+            <Link to="/arusantimo">Arusantimo</Link>
         </header>
     )
 };
