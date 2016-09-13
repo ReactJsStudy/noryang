@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 class Home extends React.Component {
     render () {
         return (
-            <div>arusantimo</div>
+            <div>arusantimo 이제 시작</div>
         )
     }
 }
