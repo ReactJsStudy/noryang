@@ -1,11 +1,15 @@
-import React, { PropTypes } from 'react'
+import React from 'react';
+import PlayGround from './PlayGround';
 
-class Home extends React.Component {
-    render () {
-        return (
-            <div>arusantimo 이제 시작</div>
-        )
-    }
+export default class ArusantimoMain extends React.Component {
+  componentDidMount() {
+    console.log('sdsd');
+  }
+  render() {
+    return (
+      <div className="arusantimo">
+        <PlayGround/>
+      </div>
+    );
+  }
 }
-
-export default Home;
