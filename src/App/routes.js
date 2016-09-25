@@ -16,7 +16,7 @@ const routes = getState => ({
         }, {
             path: '/arusantimo',
             component: ArusantimoMain,
-            onEnter: ()=>{ console.log('welcome Arunsantimo page!!!\n\n\n\n\n\n enjoy~~'); }
+            onEnter: ()=>{ console.log('welcome to Arunsantimo page!'); }
         }
     ]
 });
