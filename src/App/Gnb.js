@@ -5,7 +5,7 @@ const Gnb = () => {
     return (
         <header>
             <Link className="home" to="/">Home</Link>{' '}
-            <Link to="/gomugom">gomugom</Link>
+            <Link to="/gomugom">Gomugom</Link>
             <Link to="/arusantimo">Arusantimo</Link>
         </header>
     )
